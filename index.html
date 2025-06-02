@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ntk_forecast</title>
+    <link rel="stylesheet" href="src\styles.css"/>
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+
+</head>
+
+<body>
+<div class="bord">
+    <h1>
+        &#9748;
+        Nquks Weather App &#127752;
+    </h1>
+
+    <div class="weather">
+        <header >
+            <form id="search-form">
+                <div class = "tab">
+                     <input type="search" id="city-input" placeholder="Enter city" required>
+                     <input type="submit" value="Search" class="search-city">
+                </div>
+           
+            </form>
+        </header>
+
+        <main>
+            <h2 class="details">
+                Weather in 
+                <span id ="change-city"> Newcastle </span>
+                <div id="datetime"> 
+                    <small>
+                    </small>
+                </div>
+                <br>
+
+                <div class="icon">
+                 </div>
+                
+                
+                
+                <div>
+                    <span class="temperature">
+                    18
+                </span>
+                <span class="temp-unit">°C</span> 
+                </div>
+                
+                <div class="sky">
+                            Partly cloudy day
+                </div>
+                <br>
+
+            <div class="row">
+
+                <div class="wind">
+                    Wind Speed 
+                    <div class="icons">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2045/2045893.png" width="32px">
+                    </div>
+                    <span class="speed"> 
+                        2.56
+                    </span> 
+                    km/h
+                </div>
+
+
+                <div>
+                    Humidity
+                   <div class="icons">
+                        <img src="https://cdn-icons-png.flaticon.com/512/4148/4148460.png" width="30px">
+                   </div>
+                    <span class="humidity">50</span>%
+                </div>
+
+                <div>
+                    Pressure
+                    <div class="icons">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsbTNnhv8xa5fKkTACWq2xwuf1vvtqLyFKPg&s" width="30px">
+                    </div>
+                    <span class="pressure"> 1014 </span>hPa
+                </div>
+            </div>
+            </h2>
+        </main>
+
+        <section class="weekly">
+            <div class="weekly-updates" id = "forecast">
+              
+            </div>
+        </section>
+    </div>
+    
+
+
+
+
+    <footer>
+        Coded by 
+        <a href="https://www.shecodes.io/graduates/124169-ntokozo-nqukwe" target="_blank">
+            Ntokozo Nqukwe
+        </a>
+
+        , the code is hosted
+
+        <a href="https://github.com/ntknquks98/ntk_vanilla_weather_search" target="_blank">
+            on Github
+        </a>
+
+        and website hosted
+
+        <a href="https://ntk-weather-search.netlify.app/" target="_blank"> 
+            on Netlify
+
+        </a>
+    </footer>
+
+</div>
+</body>
+<script src ="src\functionality.js"> </script>
+</html>
