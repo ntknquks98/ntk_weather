@@ -57,14 +57,14 @@ function search(event) {
 
 
   let key = "6b90c613e500ac1f467bft96eea4oe2a";
-  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${searchInputElement.value}&key=${key}`;
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${searchInputElement.value}&key=${key}&units=metric`;
   axios.get(apiUrl).then(changeTemp);
   axios.get(apiUrl).then(changeSpeed);
   axios.get(apiUrl).then(changeHumidity);
   axios.get(apiUrl).then(changePressure);
   axios.get(apiUrl).then(changeSky);
   axios.get(apiUrl).then(changeIcon);
-
+  displayForecast();
 }
 
 function formatDate(date) {
@@ -131,5 +131,5 @@ let currentDate = new Date();
 currentDateELement.innerHTML = formatDate(currentDate);
 alert("Welcome")
 
-displayForecast();
+
 
