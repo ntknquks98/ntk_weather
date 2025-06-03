@@ -46,6 +46,8 @@
         display: block;
         text-align: center;
     }
+
+    
     .bord{
         background-color: aqua;
         border-style: solid;
@@ -105,7 +107,13 @@
     font-weight: bolder;
     text-align: center;
    }
-    
+   
+   .day:hover{
+    flex: 1;
+    background-color: aqua;
+    transition: all 0.5s ease;
+   }
+
     #city-input{
         width: 70%;
     }
@@ -120,3 +128,9 @@
         justify-content: space-around;
         padding: 5px;
     }
+    #type {
+            width: 60px;
+            
+            display:block;
+            margin: 0 auto;
+        }
